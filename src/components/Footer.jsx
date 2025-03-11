@@ -26,7 +26,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center text-sm text-gray-400 mt-6">
-        © {new Date().getFullYear()} EduTech. All rights reserved.
+        © {new Date().getFullYear()} Noted. All rights reserved.
       </div>
     </footer>
   );
