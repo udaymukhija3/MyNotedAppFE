@@ -7,7 +7,7 @@ const Footer = () => {
         <div></div>
 
         {/* Center Column — Resources */}
-        <div className="text-center">
+        <div className="flex flex-col items-center">
           <h4 className="text-lg font-semibold mb-3">Resources</h4>
           <ul className="space-y-2">
             <li><a href="#" className="hover:underline">Home</a></li>
@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
 
         {/* Right Column — Company */}
-        <div className="text-right">
+        <div className="flex flex-col items-end">
           <h4 className="text-lg font-semibold mb-3">Company</h4>
           <ul className="space-y-2">
             <li><a href="#" className="hover:underline">About Us</a></li>
