@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
     <footer className="bg-white py-10 px-6 border-t mt-10">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start text-sm text-gray-700 gap-10">
-
-        {/* Center Column — Resources */}
-        <div className="flex flex-col items-center md:items-center w-full md:w-1/2">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center md:justify-between text-sm text-gray-700 gap-10">
+        
+        {/* Resources */}
+        <div className="flex flex-col items-center md:items-start">
           <h4 className="text-lg font-semibold mb-4">Resources</h4>
           <div className="flex flex-col gap-2 text-center md:text-left">
             <a href="#" className="hover:underline">Home</a>
@@ -13,10 +13,10 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Right Column — Company */}
-        <div className="flex flex-col items-center md:items-end w-full md:w-1/2">
+        {/* Company */}
+        <div className="flex flex-col items-center md:items-start">
           <h4 className="text-lg font-semibold mb-4">Company</h4>
-          <div className="flex flex-col gap-2 text-center md:text-right">
+          <div className="flex flex-col gap-2 text-center md:text-left">
             <a href="#" className="hover:underline">About Us</a>
             <a href="#" className="hover:underline">Teams</a>
             <a href="#" className="hover:underline">Contact Us</a>
