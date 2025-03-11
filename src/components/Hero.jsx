@@ -20,15 +20,15 @@ const Hero = () => {
   };
 
   return (
-    <section className="text-center px-6 py-20 bg-gray-50">
-      <h2 className="text-3xl md:text-4xl font-bold mb-6 max-w-2xl mx-auto">
-        Turn PDFs, topics or table of contents into interactive YouTube lessons, quizzes and flashcards easily.
+    <section className="text-center px-6 py-24 bg-gray-50 font-sans">
+      <h2 className="text-3xl md:text-4xl font-semibold mb-12 max-w-2xl mx-auto leading-snug">
+        Turn PDFs, topics or table of contents <br /> into interactive YouTube lessons, quizzes and flashcards easily.
       </h2>
 
-      <div className="max-w-xl mx-auto flex flex-col gap-4 items-center">
+      <div className="max-w-xl mx-auto flex flex-col gap-6 items-center">
 
-        {/* Textbox and Create Button in Same Row */}
-        <div className="flex w-full gap-2">
+        {/* Input + Create Button */}
+        <div className="flex w-full gap-3">
           <input
             type="text"
             value={input}
@@ -41,8 +41,8 @@ const Hero = () => {
           </button>
         </div>
 
-        {/* Upload Buttons in Same Row */}
-        <div className="flex gap-4 mt-4">
+        {/* Upload Buttons */}
+        <div className="flex gap-5">
           <button
             className="border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-50"
             onClick={() => pdfInputRef.current.click()}
@@ -72,8 +72,8 @@ const Hero = () => {
           />
         </div>
 
-        {/* File Names (if selected) */}
-        <div className="mt-2 text-sm text-gray-600 text-left w-full">
+        {/* File Info (if selected) */}
+        <div className="text-sm text-gray-600 text-left w-full">
           {pdfFile && <p>📄 PDF: {pdfFile.name}</p>}
           {tocFile && <p>📄 ToC: {tocFile.name}</p>}
         </div>
