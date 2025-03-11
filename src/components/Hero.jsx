@@ -26,18 +26,23 @@ const Hero = () => {
       </h2>
 
       <div className="max-w-xl mx-auto flex flex-col gap-4 items-center">
-        <input
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="Enter topic, PDF link, or ToC"
-          className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-        <button className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 w-full md:w-auto">
-          Create Course
-        </button>
 
-        <div className="flex flex-col md:flex-row gap-4 mt-6 items-center">
+        {/* Textbox and Create Button in Same Row */}
+        <div className="flex w-full gap-2">
+          <input
+            type="text"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Enter topic, PDF link, or ToC"
+            className="flex-grow px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button className="bg-blue-600 text-white px-5 py-3 rounded hover:bg-blue-700 whitespace-nowrap">
+            Create Course
+          </button>
+        </div>
+
+        {/* Upload Buttons in Same Row */}
+        <div className="flex gap-4 mt-4">
           <button
             className="border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-50"
             onClick={() => pdfInputRef.current.click()}
@@ -67,7 +72,8 @@ const Hero = () => {
           />
         </div>
 
-        <div className="mt-4 text-sm text-gray-600">
+        {/* File Names (if selected) */}
+        <div className="mt-2 text-sm text-gray-600 text-left w-full">
           {pdfFile && <p>📄 PDF: {pdfFile.name}</p>}
           {tocFile && <p>📄 ToC: {tocFile.name}</p>}
         </div>
