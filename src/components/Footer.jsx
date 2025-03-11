@@ -1,19 +1,25 @@
 const Footer = () => {
   return (
     <footer className="bg-white py-8 px-6 border-t mt-10">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-gray-600">
+        
+        {/* Left Column — Empty for spacing */}
+        <div></div>
+
+        {/* Center Column — Resources */}
+        <div className="text-center">
           <h4 className="text-lg font-semibold mb-3">Resources</h4>
-          <ul className="space-y-2 text-gray-600">
+          <ul className="space-y-2">
             <li><a href="#" className="hover:underline">Home</a></li>
             <li><a href="#" className="hover:underline">Sign Up</a></li>
             <li><a href="#" className="hover:underline">FAQ</a></li>
           </ul>
         </div>
 
-        <div>
+        {/* Right Column — Company */}
+        <div className="text-right">
           <h4 className="text-lg font-semibold mb-3">Company</h4>
-          <ul className="space-y-2 text-gray-600">
+          <ul className="space-y-2">
             <li><a href="#" className="hover:underline">About Us</a></li>
             <li><a href="#" className="hover:underline">Teams</a></li>
             <li><a href="#" className="hover:underline">Contact Us</a></li>
@@ -25,8 +31,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-center text-sm text-gray-400 mt-6">
-        © {new Date().getFullYear()} Noted. All rights reserved.
+      <div className="text-center text-xs text-gray-400 mt-6">
+        © {new Date().getFullYear()} EduTech. All rights reserved.
       </div>
     </footer>
   );
